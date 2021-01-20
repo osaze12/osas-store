@@ -1,0 +1,212 @@
+.nav p{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 50px;
+    animation-name: scale;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.nav img{
+    width: 50px;
+    margin-left: 40px;
+    transform: rotate(95deg);
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.nav svg{
+    font-size: 25px;
+    color: #403c3c;
+}
+.nav span{
+    position: absolute;
+    color: #fff;
+    top: 15px;
+    right: -10px;
+    padding: 2px 4px;
+    background: #ff7171;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin-top: 50px;
+   
+}
+.homePage{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homePageInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeImage{
+    background: #e0e0e0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.homeImage img{
+    width: auto;
+    height: 450px;
+}
+.homePageInner .desc{
+    max-width: 400px;
+    line-height: 1.6;
+    text-align: center;
+}
+.desc{
+    padding: 17px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.desc h1{
+    font-family: serif;
+}
+.desc p{
+    font-size: .9em;
+    color: #8a8a8a;
+}
+.homePageInner .gotoshop{
+    border: none;
+    padding: 10px 25px;
+    background: #0d0d19;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.Main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.checkOutPage{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-top: 5%;
+}
+.side form{
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.side form input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #040308;
+    margin:8px;
+}
+.pay{
+    border: none;
+    outline: none;
+    background: #141121;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+.side form button, .clearcart{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    color:black;
+}
+.side{
+    display: flex;
+    align-items: center;
+   
+}
+.side-inner{
+    max-width: 250px;
+}
+.total{
+    font-size: 1.4em;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.Notification{
+    font-size: .8em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: #ef5151;
+    transform: translateY(7px);
+    opacity: 0;
+    animation-name: noti-slideUp;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+}
+@keyframes noti-slideUp{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-successful{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0);
+    background: rgba(0,0,0,0.7);
+}
+.modal-content{
+    border-radius: 3px;
+    background: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+
+}
+.modal-content .close{
+    color:#aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.modal-content p{
+    line-height: 1.8;
+    font-weight: bold;
+    margin:15px
+}
+.modal-content .close:hover, .modal-content .close:focus{
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+}

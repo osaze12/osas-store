@@ -1,0 +1,49 @@
+.product img{
+    width: 100%;
+    height: auto;
+}
+.product{
+    max-width: 400px;
+    margin: 5px;
+}
+.product button{
+    border: 1px solid #6b6868;
+    margin-top: 20px;
+    padding: 10px 20px;
+    outline: none;
+    background: transparent;
+    font-weight: bolder;
+    color: #353434;
+    margin-bottom: 25px;
+}
+.productInner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.productInner h3{
+    font-family: serif;
+    font-size: 27px;
+    color: #353434;
+}
+.productInner .join{
+    padding: 7px;
+    margin-top: 7px;
+}
+.productInner p{
+    font-size: 20px;
+    font-family: cursive, sans-serif;
+    background: #141121;
+    border-radius: 7px;
+    padding: 5px 9px;
+    color: #fff;
+}
+.checkOutPage .inner{
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    overflow: scroll;
+    width: 600px;
+    align-items: baseline;
+    justify-content: center;
+}
